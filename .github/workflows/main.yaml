@@ -34,6 +34,6 @@ jobs:
           -H "Content-Type: application/json" \
           --data '{
             "image": "taxi_trip_fare_predictor:latest",
-            "serviceId": "srv-ckl722rj89us73coe160"  # Replace with your Render service ID
+            "serviceId": "srv-cksp329f3gac73dlpeeg"  # Replace with your Render service ID
           }' \
           https://api.render.com/v1/deploys
