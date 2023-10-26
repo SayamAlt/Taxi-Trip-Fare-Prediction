@@ -2,6 +2,5 @@ joblib
 flask
 gunicorn
 pandas
-catboost
 scikit-learn
 lightgbm
