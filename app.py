@@ -19,7 +19,7 @@ def predict():
         tip = int(request.form['tip'])
         base_fare = float(request.form['base_fare'])
         data = pd.DataFrame([[meter_rate,trip_duration,miscellaneous_fees,tip,base_fare]],columns=['meter_rate','trip_duration','miscellaneous_fees','tip','base_fare'])
-        pred = pipeline.predict(data)[0]
+        pred = round(pipeline.predict(data)[0],2)
         return render_template('index.html',prediction_text=f"The predicted total fare of your taxi trip is ₹{pred}.")
     
 if __name__ == '__main__':
