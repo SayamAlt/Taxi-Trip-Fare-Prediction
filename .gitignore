@@ -1,3 +1,4 @@
 .env
 catboost_info
 .vscode
+taxi-trip-fare-prediction.ipynb
