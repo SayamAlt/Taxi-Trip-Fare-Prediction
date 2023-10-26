@@ -16,7 +16,7 @@ def predict():
         meter_rate = float(request.form['meter_rate'])
         trip_duration = float(request.form['trip_duration'])
         miscellaneous_fees = float(request.form['miscellaneous_fees'])
-        tip = float(request.form['tip'])
+        tip = int(request.form['tip'])
         base_fare = float(request.form['base_fare'])
         data = pd.DataFrame([[meter_rate,trip_duration,miscellaneous_fees,tip,base_fare]],columns=['meter_rate','trip_duration','miscellaneous_fees','tip','base_fare'])
         pred = pipeline.predict(data)
