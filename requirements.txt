@@ -1,7 +1,6 @@
 joblib
 flask
 gunicorn
-numpy
 pandas
 scikit-learn
 lightgbm
